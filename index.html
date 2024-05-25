@@ -4,73 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psicóloga Emanuele</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
 </head>
 <body>
-<header>
-    <div class="container">
-        <h1 style="color: #333333">Psicóloga Emanuele</h1>
-        <nav>
-            <ul>
-                <li><a href="#about"><i class="fas fa-user"></i> Sobre Mim</a></li>
-                <li><a href="#services"><i class="fas fa-tasks"></i> Serviços</a></li>
-                <li><a href="#testimonials"><i class="fas fa-comments"></i> Depoimentos</a></li>
-                <li><a href="#social"><i class="fas fa-share-alt"></i> Redes Sociais</a></li>
-            </ul>
-        </nav>
+<header class="fundo2">
+    <div class="header">
+        <div  class="">
+            <img src="assets/logo_clara.png" alt="" class="logo">
+        </div>
+
+        <div class="">
+            <nav class="">
+                <ul class="">
+                    <li><a href="#about"><i class="fas fa-user paleta3"></i> <span class="paleta3 text-lg font-semibold">Sobre Mim</span></a></li>
+                    <li><a href="#services"><i class="fas fa-tasks paleta3" ></i> <span class="paleta3 text-lg font-semibold">Serviços</span></a></li>
+                    <li><a href="#atendimento"><i class="fas fa-comments paleta3"></i><span class="paleta3 text-lg font-semibold">Atendimento</span> </a></li>
+                    <li><a href="#social"><i class="fas fa-share-alt paleta3"></i> <span class="paleta3 text-lg font-semibold"> Redes Sociais</span></a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
+
 </header>
 
-<section id="about" class="container">
-    <h2>Sobre Mim</h2>
+<section id="about" class="container p-4">
     <div class="about-content">
         <img src="./assets/imagem1.jpg" alt="Sobre Emanuele" class="responsive-img">
     </div>
 </section>
 
-<section id="services" class="container" style="background-color: #ADD8E6;">
-    <h2>Serviços</h2>
+<section id="services" class="container p-4">
     <div class="services-content">
-        <img src="/assets/servicos.jpg" alt="Serviços de Psicologia" class="responsive-img">
+        <img src="/assets/imagemtratada1.png" alt="Serviços de Psicologia" class="responsive-img">
     </div>
 </section>
 
-<!--<section id="testimonials" class="container" style="background-color: #98FB98;">-->
-<!--    <h2>Depoimentos</h2>-->
-<!--    <div class="testimonials-content">-->
-<!--        <div class="testimonial">-->
-<!--            <img src="https://source.unsplash.com/200x200/?face" alt="Depoimento de João" class="responsive-img">-->
-<!--            <p>"A Emanuele me ajudou a encontrar clareza e paz em momentos difíceis. Sou eternamente grato pelo suporte e orientação dela." - João</p>-->
-<!--        </div>-->
-<!--        <div class="testimonial">-->
-<!--            <img src="https://source.unsplash.com/200x200/?person" alt="Depoimento de Maria" class="responsive-img">-->
-<!--            <p>"Graças à Emanuele, aprendi a lidar melhor com meus problemas e a encontrar soluções dentro de mim." - Maria</p>-->
-<!--        </div>-->
-<!--        <div class="testimonial">-->
-<!--            <img src="https://source.unsplash.com/200x200/?portrait" alt="Depoimento de Pedro" class="responsive-img">-->
-<!--            <p>"Recomendo a Emanuele a todos que precisam de uma profissional dedicada e empática." - Pedro</p>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
 <section id="atendimento" class="container">
-    <img src="assets/atendimento.jpg" alt="" class="responsive-img">
+    <img src="assets/imagemtratada2.png" alt="" class="responsive-img">
 </section>
 
-<section id="social" class="container" style="background-color: #FFFACD;">
-    <h2>Redes Sociais</h2>
+<section id="social" class="container p-4 fundo11">
     <div class="social-icons">
-        <a href="https://wa.me/5592994865827?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+sess%C3%A3o+de+terapia%21 " target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=61555543963469&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/psi.emanuelepuget" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/emanuele" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <div class="social-icon text-center">
+            <a href="https://wa.me/5592994865827?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+sess%C3%A3o+de+terapia%21 " target="_blank">
+                <i class="fab fa-whatsapp " style="font-size: 40px; margin-bottom: 10px;"></i>
+                <p>WhatsApp</p>
+            </a>
+        </div>
+        <div class="social-icon text-center">
+            <a href="https://www.facebook.com/profile.php?id=61555543963469&mibextid=ZbWKwL" target="_blank" style="text-decoration: none; color: #333;">
+                <i class="fab fa-facebook-f" style="font-size: 40px; margin-bottom: 10px;"></i>
+                <p>Facebook</p>
+            </a>
+        </div>
+        <div class="social-icon text-center">
+            <a href="https://www.instagram.com/psi.emanuelepuget" target="_blank" style="text-decoration: none; color: #333;">
+                <i class="fab fa-instagram" style="font-size: 40px; margin-bottom: 10px;"></i>
+                <p>Instagram</p>
+            </a>
+        </div>
     </div>
 </section>
 
-<footer style="background-color: #FFB6C1;">
-    <div class="container">
-        <p>&copy; 2024 Psicóloga Emanuele. Todos os direitos reservados.</p>
+
+<footer class="fundo2">
+    <div class="">
+        <p class="text-xs font-semibold">&copy; 2024 Psicóloga Emanuele. Todos os direitos reservados.</p>
     </div>
 </footer>
 <script src="scripts.js"></script>

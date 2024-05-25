@@ -4,13 +4,17 @@
 body {
     background-color: #ffffff; /* Cor de fundo branco */
     font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
 /* Estilos para o cabeçalho */
-header {
-    background-color: #333;
-    color: #fff;
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header .container {
@@ -42,7 +46,7 @@ nav ul li a {
 
 /* Estilos para as seções */
 .container {
-    max-width: 960px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
     background-color: #f9f9f9; /* Cor de fundo das seções */
@@ -82,6 +86,119 @@ footer {
     font-size: 14px;
     background-color: #f9f9f9;
     border-top: 1px solid #ddd;
+}
+
+.paleta1{
+    color: #252843
+}
+.paleta2{
+    color: #faf9db
+}
+.paleta3{
+    color: #8c5745
+}
+.paleta4{
+    color: #b384b3
+}
+.paleta5{
+    color: #caa086
+}
+
+.fundo1{
+    background: #FFD1DC
+}
+.fundo2{
+    background: #faf9db
+}
+.fundo3{
+    background: #8c5745
+}
+.fundo4{
+    background: #b384b3
+}
+.fundo5{
+    background: #caa086
+}
+.fundo6{
+    background: #bf9055
+}
+.fundo7{
+    background: #c9a1b3
+}
+.fundo8{
+    background: #e1c8ac
+}
+.fundo9{
+    background: #749494
+}
+
+.fundo10{
+    background: #FFC0CB
+}
+.fundo11{
+    background: #F2E9E4;
+}
+
+.logo {
+    width: 200px; /* Largura da imagem */
+}
+
+.responsive-logo {
+    max-width: 70%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Altera a direção do flex para coluna */
+        align-items: center; /* Centraliza os itens verticalmente */
+    }
+
+    nav {
+        margin-top: 20px; /* Adiciona um espaço entre o logo e a navegação */
+    }
+
+    nav ul {
+        text-align: center; /* Centraliza os itens horizontalmente */
+    }
+
+    nav ul li {
+        display: block; /* Mostra os itens da navegação em bloco */
+        margin-bottom: 10px; /* Adiciona um espaço entre os itens */
+    }
+
+    nav ul li a {
+        display: inline-block; /* Mostra os links como blocos para adicionar espaçamento */
+    }
+}
+
+
+.social-icons {
+    display: flex; /* Torna os ícones flexíveis */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+}
+
+.social-icon {
+    margin: 0 10px; /* Adiciona um espaço entre os ícones */
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Estilos para a seção das redes sociais */
+    .social-icons {
+        display: flex; /* Torna os ícones flexíveis */
+        flex-direction: column; /* Altera a direção para coluna */
+        align-items: center; /* Centraliza os ícones verticalmente */
+        margin-top: 20px; /* Adiciona um espaço acima dos ícones */
+    }
+
+    /* Estilos para cada ícone */
+    .social-icon {
+        margin: 10px 0; /* Adiciona margens acima e abaixo dos ícones */
+    }
 }
 
 /* Adicione estilos adicionais conforme necessário */
