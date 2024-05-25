@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #77ab59 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+header li {
+    padding: 0 20px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header .highlight, header .current a {
+    color: #77ab59;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #77ab59;
+    font-weight: bold;
+}
+
+section {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px 0;
+    margin: 20px 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-content, .services-content, .testimonials-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content img, .services-content img, .testimonial img {
+    margin: 0 20px 20px 0;
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9f9f9;
+    border-left: 10px solid #77ab59;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-style: italic;
+    width: 100%;
+    max-width: 800px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.social-icons a:hover {
+    color: #77ab59;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header ul {
+        flex-direction: column;
+    }
+
+    header li {
+        padding: 10px 0;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .about-content, .services-content, .testimonials-content {
+        flex-direction: column;
+    }
+
+    .about-content img, .services-content img, .testimonial img {
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+
+    .testimonial {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        flex-direction: column;
+    }
+
+    .social-icons a {
+        margin: 10px 0;
+    }
+}
